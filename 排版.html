@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Layout</title> <!--大多找個最通用的主板置中，例如寬螢幕左右留白比較多-->
+<style type="text/css">
+.frame{
+	width:1000px;
+	margin-left:auto;margin-right:auto;
+	text-align:center;
+	background-color:pink;
+}
+
+/*
+	box-sizing:border-box;
+*/
+
+/*
+box-sizing:content-box(預設)
+	實際尺寸=width+padding+border
+*/
+
+.left{
+	width:480px;display:inline-block;vertical-align:top;
+	padding:10px;
+	background-color:red;color:white;
+}
+
+.right{
+	width:500px;display:inline-block;vertical-align:top;
+	background-color:blue;color:white;
+	text-align:left;
+}
+
+</style>
+</head>
+<body>
+	<div class="frame">
+	<div class="left">Left</div><!--此註解只是為了容器裡不要有空白空間
+	--><div class="right">
+		<h3>註冊</h3>
+		<div>永遠免費</div>
+		</div>
+	
+	</div>
+	
+</body>
+</html>
